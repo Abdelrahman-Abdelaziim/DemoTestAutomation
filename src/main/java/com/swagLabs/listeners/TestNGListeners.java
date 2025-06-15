@@ -28,7 +28,10 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
         LogsUtil.info("the directory for the screenshots is cleaned");
         LogsUtil.info("the directory for the allure results is cleaned");
         LogsUtil.info("the directory for the allure report is cleaned");
-
+        FilesUtils.createDirectory(allure_results);
+        FilesUtils.createDirectory(logs);
+        FilesUtils.createDirectory(screenshots);
+        FilesUtils.createDirectory(allure_report);
 
     }
 
