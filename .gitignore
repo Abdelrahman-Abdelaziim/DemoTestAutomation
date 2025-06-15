@@ -32,7 +32,7 @@ build/
 !**/src/test/**/build/
 ### VS Code ###
 .vscode/
-test-outputs
+test-outputs/
 
 ### Mac OS ###
 .DS_Store
