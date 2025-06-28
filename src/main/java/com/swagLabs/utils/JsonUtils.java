@@ -16,7 +16,7 @@ public class JsonUtils {
         try {
             JSONObject data = (JSONObject) new JSONParser().parse(new FileReader(JSON_FILE_PATH + jsonFileName + ".json"));
             jsonReader = data.toJSONString();
-        } catch (Exception e) {
+             } catch (Exception e) {
             LogsUtil.error(e.getMessage());
         }
     }
