@@ -35,7 +35,8 @@ public class ElementActions {
     public  String getText( By locator) {
         waits.waitForElementVisible( locator);
        scrollToElement( locator);
-        LogsUtil.info("Getting text from the element : ", locator.toString(), "text is : ", findElement(locator).getText());
+        LogsUtil.info("Getting text from the element : ",
+                locator.toString(), "text is : ", findElement(locator).getText());
         return findElement( locator).getText();
     }
 
@@ -47,7 +48,8 @@ public class ElementActions {
      public String getTextFromInput(  By locator){
         waits.waitForElementVisible(locator);
        scrollToElement(locator);
-        LogsUtil.info("Getting text from the input field  :" + locator.toString()+ "text " + findElement( locator).getDomAttribute("value"));
+        LogsUtil.info("Getting text from the input field  :" + locator.toString()+ "text "
+                + findElement( locator).getDomAttribute("value"));
         return findElement( locator).getDomAttribute("value");
      }
     @Step("Scrolling to element: {0}")
